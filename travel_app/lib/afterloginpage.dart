@@ -52,176 +52,7 @@ class _AfterLoginPageState extends State<AfterLoginPage> {
           onPageChanged: onPageChanged,
           controller: _pageController,
         ),
-        // body: Container(
-        //   child: Column(
-        //     // crossAxisAlignment: CrossAxisAlignment.center,
-        //     children: [
-        //       SizedBox(
-        //         height: 40,
-        //       ),
-        //       Container(
-        //         child: Center(
-        //           child: Text(
-        //             "AIRFLY",
-        //             style: TextStyle(
-        //                 fontSize: 20,
-        //                 letterSpacing: 10,
-        //                 fontWeight: FontWeight.bold,
-        //                 color: Colors.red),
-        //           ),
-        //         ),
-        //       ),
-        //       SizedBox(
-        //         height: 30,
-        //       ),
-        //       Container(
-        //         margin: EdgeInsets.symmetric(horizontal: 20),
-        //         child: TextFormField(
-        //           decoration: InputDecoration(
-        //             suffixIcon: Container(
-        //               margin: EdgeInsets.only(right: 20),
-        //               child: Icon(
-        //                 Icons.search,
-        //                 size: 35,
-        //                 color: Colors.red,
-        //               ),
-        //             ),
-        //             hintText: 'Search Your Holiday',
-        //             border: OutlineInputBorder(
-        //               borderSide: BorderSide(color: Colors.grey),
-        //               borderRadius: BorderRadius.circular(25),
-        //             ),
-        //           ),
-        //         ),
-        //       ),
-        //       SizedBox(
-        //         height: 20,
-        //       ),
-        //       Container(
-        //         margin: EdgeInsets.only(left: 20),
-        //         alignment: Alignment.centerLeft,
-        //         child: Text(
-        //           "Most Popular Places",
-        //           style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-        //         ),
-        //       ),
-        //       Expanded(
-        //         child: ListView(
-        //           children: [
-        //             CarouselSlider(
-        //                 items: [
-        //                   Container(
-        //                     margin: EdgeInsets.all(6.0),
-        //                     decoration: BoxDecoration(
-        //                       borderRadius: BorderRadius.circular(8.0),
-        //                       image: DecorationImage(
-        //                         image: NetworkImage(
-        //                             "https://travel.usnews.com/dims4/USNEWS/a798492/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/edited_south_island_nz_getty_irma_ferreira_445x280_dxgXWlc.jpg"),
-        //                         fit: BoxFit.cover,
-        //                       ),
-        //                     ),
-        //                   ),
-        //                   Container(
-        //                     margin: EdgeInsets.all(6.0),
-        //                     decoration: BoxDecoration(
-        //                       borderRadius: BorderRadius.circular(8.0),
-        //                       image: DecorationImage(
-        //                         image: NetworkImage(
-        //                             "https://travel.usnews.com/dims4/USNEWS/a798492/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/edited_south_island_nz_getty_irma_ferreira_445x280_dxgXWlc.jpg"),
-        //                         fit: BoxFit.cover,
-        //                       ),
-        //                     ),
-        //                   ),
-        //                   Container(
-        //                     margin: EdgeInsets.all(6.0),
-        //                     decoration: BoxDecoration(
-        //                       borderRadius: BorderRadius.circular(8.0),
-        //                       image: DecorationImage(
-        //                         image: NetworkImage(
-        //                             "https://travel.usnews.com/dims4/USNEWS/a798492/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/edited_south_island_nz_getty_irma_ferreira_445x280_dxgXWlc.jpg"),
-        //                         fit: BoxFit.cover,
-        //                       ),
-        //                     ),
-        //                   ),
-        //                 ],
-        //                 options: CarouselOptions(
-        //                   height: 180.0,
-        //                   enlargeCenterPage: true,
-        //                   autoPlay: true,
-        //                   aspectRatio: 16 / 9,
-        //                   autoPlayCurve: Curves.fastOutSlowIn,
-        //                   enableInfiniteScroll: true,
-        //                   autoPlayAnimationDuration:
-        //                       Duration(milliseconds: 800),
-        //                   viewportFraction: 0.5,
-        //                 ))
-        //           ],
-        //         ),
-        //       ),
-        //       Container(
-        //         margin: EdgeInsets.only(left: 20),
-        //         alignment: Alignment.centerLeft,
-        //         child: Text(
-        //           "Your Favorite Places",
-        //           style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-        //         ),
-        //       ),
-        //       Expanded(
-        //         child: ListView(
-        //           children: [
-        //             CarouselSlider(
-        //               items: [
-        //                 Container(
-        //                   margin: EdgeInsets.all(6.0),
-        //                   decoration: BoxDecoration(
-        //                     borderRadius: BorderRadius.circular(8.0),
-        //                     image: DecorationImage(
-        //                       image: NetworkImage(
-        //                           "https://travel.usnews.com/dims4/USNEWS/a798492/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/edited_south_island_nz_getty_irma_ferreira_445x280_dxgXWlc.jpg"),
-        //                       fit: BoxFit.cover,
-        //                     ),
-        //                   ),
-        //                 ),
-        //                 Container(
-        //                   margin: EdgeInsets.all(6.0),
-        //                   decoration: BoxDecoration(
-        //                     borderRadius: BorderRadius.circular(8.0),
-        //                     image: DecorationImage(
-        //                       image: NetworkImage(
-        //                           "https://travel.usnews.com/dims4/USNEWS/a798492/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/edited_south_island_nz_getty_irma_ferreira_445x280_dxgXWlc.jpg"),
-        //                       fit: BoxFit.cover,
-        //                     ),
-        //                   ),
-        //                 ),
-        //                 Container(
-        //                   margin: EdgeInsets.all(6.0),
-        //                   decoration: BoxDecoration(
-        //                     borderRadius: BorderRadius.circular(8.0),
-        //                     image: DecorationImage(
-        //                       image: NetworkImage(
-        //                           "https://travel.usnews.com/dims4/USNEWS/a798492/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/edited_south_island_nz_getty_irma_ferreira_445x280_dxgXWlc.jpg"),
-        //                       fit: BoxFit.cover,
-        //                     ),
-        //                   ),
-        //                 ),
-        //               ],
-        //               options: CarouselOptions(
-        //                 height: 170.0,
-        //                 enlargeCenterPage: true,
-        //                 autoPlay: true,
-        //                 aspectRatio: 16 / 14,
-        //                 autoPlayCurve: Curves.fastOutSlowIn,
-        //                 enableInfiniteScroll: false,
-        //                 autoPlayAnimationDuration: Duration(milliseconds: 800),
-        //                 viewportFraction: 0.5,
-        //               ),
-        //             ),
-        //           ],
-        //         ),
-        //       ),
-        //     ],
-        //   ),
-        // ),
+        //BottomnavigationBar
         bottomNavigationBar: ClipRRect(
           borderRadius: BorderRadius.only(
               topLeft: Radius.circular(30), topRight: Radius.circular(30)),
@@ -278,7 +109,7 @@ class _AfterLoginPageState extends State<AfterLoginPage> {
 
   void onTabTapped(int index) {
     this._pageController.animateToPage(index,
-        duration: const Duration(milliseconds: 500), curve: Curves.easeInOut);
+        duration: const Duration(milliseconds: 100), curve: Curves.easeInOut);
   }
 }
 
@@ -288,6 +119,8 @@ class Screen1 extends StatefulWidget {
 }
 
 class _Screen1State extends State<Screen1> {
+  // Set<String> savedWords = Set<String>();
+  List<Info> favs = [];
   List<Info> info = [
     Info(
         name: 'NewYork',
@@ -400,10 +233,11 @@ class _Screen1State extends State<Screen1> {
             Container(
               height: 160,
               child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
-                  shrinkWrap: true,
-                  itemCount: info.length,
-                  itemBuilder: (context, index) => buildCard(info[index])),
+                scrollDirection: Axis.horizontal,
+                shrinkWrap: true,
+                itemCount: info.length,
+                itemBuilder: (context, index) => buildCard(info[index]),
+              ),
             ),
             SizedBox(
               height: 15,
@@ -419,26 +253,15 @@ class _Screen1State extends State<Screen1> {
             SizedBox(
               height: 15,
             ),
-            // Container(
-            //   height: 150,
-            //   child: ListView(
-            //     scrollDirection: Axis.horizontal,
-            //     children: [
-            //       SizedBox(
-            //         width: 12,
-            //       ),
-            //       buildCard(),
-            //       SizedBox(
-            //         width: 12,
-            //       ),
-            //       buildCard(),
-            //       SizedBox(
-            //         width: 12,
-            //       ),
-            //       buildCard()
-            //     ],
-            //   ),
-            // ),
+            Container(
+              height: 150,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                shrinkWrap: true,
+                itemCount: favs.length,
+                itemBuilder: (context, index) => buildCard(favs[index]),
+              ),
+            ),
           ],
         ),
       ),
@@ -498,17 +321,22 @@ class _Screen1State extends State<Screen1> {
               bottom: 19,
               right: 12,
               child: CircleAvatar(
-                backgroundColor: Colors.white.withOpacity(0.5),
-                radius: 16,
-                child: FavoriteButton(
-                  iconSize: 32,
-                  isFavorite: false,
-                  // iconDisabledColor: Colors.white,
-                  valueChanged: (_isFavorite) {
-                    print('Is Favorite : $_isFavorite');
-                  },
-                ),
-              ),
+                  backgroundColor: Colors.white.withOpacity(0.5),
+                  radius: 16,
+                  child: GestureDetector(
+                      onTap: () {
+                        print("object");
+                        setState(() {
+                          if (favs.contains(data)) {
+                            favs.remove(data);
+                          } else {
+                            favs.add(data);
+                          }
+                        });
+                      },
+                      child: Icon(favs.contains(data)
+                          ? Icons.favorite
+                          : Icons.favorite_outline))),
             )
           ],
         ),
