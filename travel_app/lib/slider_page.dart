@@ -26,7 +26,7 @@ class _SliderPageState extends State<SliderPage> {
           },
         ),
         Positioned(
-            top: 290,
+            top: 310,
             // height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
             child: Row(
