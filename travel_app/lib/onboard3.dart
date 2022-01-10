@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:travel_app/afterloginpage.dart';
 import 'package:travel_app/widgets/app_text_button.dart';
@@ -10,27 +11,38 @@ class OnBoard3 extends StatefulWidget {
 }
 
 class _OnBoard3State extends State<OnBoard3> {
-  TextEditingController _emailController = TextEditingController();
-  TextEditingController _passwordController = TextEditingController();
-  String emailError = '';
-  String passwordError = '';
+  // TextEditingController _emailController = TextEditingController();
+  // TextEditingController _passwordController = TextEditingController();
+  // String emailError = '';
+  // String passwordError = '';
   final _formKey = GlobalKey<FormState>();
   bool check = false;
   double w = 100;
   double h = 200;
+  bool _obscureText = true;
 
-  void initState() {
-    _emailController.addListener(() {
-      print(_emailController.text);
+  late String _password;
+
+  // Toggles the password show status
+  void _toggle() {
+    setState(() {
+      _obscureText = !_obscureText;
     });
-    super.initState();
   }
+
+  // void initState() {
+  //   _emailController.addListener(() {
+  //     print(_emailController.text);
+  //   });
+  //   super.initState();
+  // }
 
   @override
   Widget build(BuildContext context) {
     print(MediaQuery.of(context).size.height);
     print(MediaQuery.of(context).size.width > 600);
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Stack(
         children: [
           Positioned(
@@ -80,7 +92,7 @@ class _OnBoard3State extends State<OnBoard3> {
                   Container(
                     margin: EdgeInsets.all(5),
                     child: TextFormField(
-                      controller: _emailController,
+                      // controller: _emailController,
                       decoration: InputDecoration(
                         labelText: 'Email',
                       ),
@@ -98,8 +110,20 @@ class _OnBoard3State extends State<OnBoard3> {
                   Container(
                     margin: EdgeInsets.all(5),
                     child: TextFormField(
-                      controller: _passwordController,
+                      // controller: _passwordController,
                       decoration: InputDecoration(
+                        suffixIcon: GestureDetector(
+                          onTap: _toggle,
+                          child: Container(
+                            height: 20,
+                            width: 20,
+                            alignment: Alignment.centerLeft,
+                            // color: Colors.amber,
+                            child: Text(
+                              _obscureText ? "Show" : "Hide",
+                            ),
+                          ),
+                        ),
                         labelText: 'Password',
                       ),
                       validator: (value) {
@@ -111,6 +135,8 @@ class _OnBoard3State extends State<OnBoard3> {
                           return null;
                         }
                       },
+                      onSaved: (val) => _password = val!,
+                      obscureText: _obscureText,
                     ),
                   ),
 
@@ -147,6 +173,7 @@ class _OnBoard3State extends State<OnBoard3> {
                   AppTextButton(
                       buttonText: 'Login',
                       onPress: () {
+                        // _toggle();
                         if (_formKey.currentState!.validate()) {
                           print('skillqode');
                           Navigator.push(

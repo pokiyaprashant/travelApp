@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:travel_app/splash.dart';
 
 import 'afterloginpage.dart';
+import 'onboard3.dart';
 
 void main() {
   runApp(MyApp());
